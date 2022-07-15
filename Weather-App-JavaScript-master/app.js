@@ -77,7 +77,8 @@ function celsiusToFahrenheit(temperature){
 
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
 tempElement.addEventListener("click", function(){
-    if(weather.temperature.value === undefined) return;
+    if (weather.temperature.value === undefined) return;
+    
     
     if(weather.temperature.unit == "celsius"){
         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
